@@ -124,6 +124,7 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
 .cursos__col {
     position: relative;
     margin-bottom: 30px;
+/*    margin-left: 5px;*/
 }
 
 .cursos__descripcion {
@@ -164,6 +165,67 @@ footer .social:first-child {
 
 .footer .copy {
     text-align: center;
+}
+
+/*------------------------RESPONSIVE------------------------*/
+
+@media(min-width:480px) {
+    .logo {
+        font-size: 40px;
+    }
+    
+    .banner__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .banner__txt {
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    
+    .info, .cursos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .info__col {
+        width: 32%;
+    }
+    
+    .info__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .section__titulo {
+        width: 100%;
+    }
+    
+    .cursos {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    
+    .cursos__col {
+        width: 49%;
+    }  
+    
+    .footer .social [class^="icon-"] {
+        margin: 0 10px;
+    }
+}
+
+@media(min-width:768px) {
+    .banner__titulo {
+        font-size: 50px;
+    }
+    
+    .cursos__titulo {
+        font-size: 35px;
+    }
 }
 
 
